@@ -327,5 +327,81 @@ cout<<"*";
 cout<<endl;
 }
 */
+
+/*
+for(int i=1; i<=n; i++){
+for(int j=1; j<=i-1; j++){
+
+cout<<" ";
+
+
+}
+for(int k=n-i+1; k>=1; k--){
+cout<<i;
+
+}
+cout<<endl;
+
+}
+*/
+
+/*
+Pattern:
+   1
+  1 2 1
+ 1 2 3 1 2 3
+1 2 3 4 1 2 3 
+
+for(int i=1; i<=n; i++){
+for(int j=1; j<=n-i; j++){
+cout<<" ";
+
+}
+
+for(int k=1; k<=i; k++){
+cout<<k;
+
+}
+for(int l=1; l<=i-1; l++){
+cout<<l;
+}
+cout<<endl;
+}
+*/
+
+
+
+
+
+//Dabangg Question
+//Analyzed that number for star doesn't matter in iteration, matters for number pattern.
+//Printing first number pattern.
+for(int i=n; i>=1; i--){
+for(int j=1; j<=i; j++){
+cout<<j;
+
+}
+
+//Printing first star pattern.
+for(int k=2; k<=n-i+1; k++){
+cout<<"*";
+} 
+
+//Printing second star pattern.
+for(int l=2; l<=n-i+1; l++){
+cout<<"*";
+} 
+
+//Printing second number pattern.
+for(int m=i; m>=1; m--){
+cout<<m;
+}
+
+cout<<endl;
+
+
+}
+
+
 return 0;
 }
